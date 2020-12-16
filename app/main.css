@@ -1,0 +1,649 @@
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #0C0C0C;
+}
+
+#logo{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-image: url("img/bschash.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  cursor: pointer;
+  transition:transform 1.3s;
+}
+#logo:hover {
+  transform: rotate(180deg);
+}
+
+#logot{
+  position: absolute;
+  font-size: 29px;
+  font-weight: 700;
+  color: gold;
+  user-select: none;
+  margin-top: 40px;
+}
+
+#notice{
+  position: absolute;
+  height:40px;
+  width: 600px;
+  margin-top: 130px;
+  border: 0.1px solid white;
+  user-select: none;
+}
+
+#howitworks{
+  position: absolute;
+  color: white;
+  margin-top: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+#howitworks:hover{
+  color: #fff;
+
+}
+#privacytips{
+  position: absolute;
+  color: white;
+  margin-top: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+#privacytips:hover{
+  color: #fff;
+}
+
+
+
+
+.signals {
+	background-color: #fff;
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+  position: absolute;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.signals {
+
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(163, 255, 0, 0.85);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#noticei{
+  position: absolute;
+  height: 25px;
+  width:25px;
+  background-image: url("img/notice.png");
+  background-size: contain;
+  background-position: center;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+#noticet{
+  color: #f00;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  margin-top: 6px;
+  margin-left: 45px;
+}
+.maincontainer{
+  position: absolute;
+  height: 240px;
+  width: 600px;
+  border:1px solid white;
+  margin-top: 280px;
+}
+.selector{
+  position: absolute;
+  height: 50px;
+  width: 150px;
+  border: 0.1px solid white;
+  border-bottom: none;
+  margin-top: 230px;
+  cursor: pointer;
+  transition:transform 1.3s;
+  user-select: none;
+}
+.selector:hover{
+  background-color: #191919;
+}
+#newaccselectt{
+  position: absolute;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+#depositselectt{
+  position: absolute;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  margin-top: 12px;
+  margin-left: 40px;
+}
+#withdrawselectt{
+  position: absolute;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  margin-top: 12px;
+  margin-left: 30px;
+}
+#donations{
+  position: absolute;
+  color: #ffd700;
+  font-family: 'Source Sans Pro', sans-serif;
+  user-select: none;
+  cursor: pointer;
+  margin-top: 550px;
+}
+#version{
+  position: absolute;
+  color: #ffd700;
+  font-family: 'Source Sans Pro', sans-serif;
+  user-select: none;
+  cursor: pointer;
+  margin-top: 580px;
+  font-size: 14px;
+}
+#newaccpass{
+  position: absolute;
+  color: #ffd700;
+  font-family: 'Source Sans Pro', sans-serif;
+  user-select: none;
+  margin-top: 20px;
+  font-size: 16px;
+  margin-left: 40px;
+}
+.inp{
+  width: 360px;
+  position: absolute;
+  background-color: #0C0C0C;
+  border: 0.1px solid #ffd700;
+  color: #ffd700;
+  outline: none;
+  margin-top: 50px;
+  font-size: 20px;
+  margin-left: 40px;
+  text-align: center;
+}
+#selamot{
+  position: absolute;
+  color: #ffd700;
+  font-family: 'Source Sans Pro', sans-serif;
+  user-select: none;
+  margin-top: 95px;
+  font-size: 16px;
+  margin-left: 40px;
+}
+#lineford{
+  position: absolute;
+  height: 2px;
+  width: 360px;
+  background-color: #ffd700;
+  margin-left: 40px;
+  margin-top: 140px;
+}
+.cirlce{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 0.1px solid #ffd700;
+  cursor: pointer;
+  margin-top: 131px;
+  background-color: #0C0C0C;
+}
+.amtext{
+  position: absolute;
+  color: #ffd700;
+  font-family: 'Source Sans Pro', sans-serif;
+  user-select: none;
+  margin-top: 160px;
+  font-size: 16px;
+  margin-left: 40px;
+}
+.Confirm{
+  height: 30px;
+  width: 150px;
+  background-color: red;
+  border-radius: 5px;
+  user-select: none;
+  background-color: #ffd700;
+  margin-top: 200px;
+  margin-left: 35px;
+  cursor: pointer;
+}
+.Confirm:hover{
+  background-color: #ffd700;
+}
+.Confirmt{
+  position: absolute;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 46px;
+}
+
+#deposittext{
+  position: absolute;
+  color: #ffd700;
+  font-family: 'Source Sans Pro', sans-serif;
+  user-select: none;
+  margin-top: 20px;
+  font-size: 16px;
+  margin-left: 40px;
+}
+#depositamountt{
+  position: absolute;
+  color: #ffd700;
+  font-family: 'Source Sans Pro', sans-serif;
+  user-select: none;
+  margin-top: 50px;
+  font-size: 16px;
+  margin-left: 40px;
+}
+#depositamount{
+  margin-top: 80px;
+  width: 100px;
+}
+#depositto{
+  position: absolute;
+  color: #ffd700;
+  font-family: 'Source Sans Pro', sans-serif;
+  user-select: none;
+  margin-top: 120px;
+  font-size: 16px;
+  margin-left: 40px;
+}
+#deposittov{
+  margin-top: 150px;
+}
+
+#withdrawt{
+  position: absolute;
+  color: #ffd700;
+  font-family: 'Source Sans Pro', sans-serif;
+  user-select: none;
+  margin-top: 20px;
+  font-size: 16px;
+  margin-left: 40px;
+}
+#readmorew{
+  color: #fff;
+  cursor: pointer;
+}
+#withdrawp{
+  position: absolute;
+  color: #ffd700;
+  font-family: 'Source Sans Pro', sans-serif;
+  user-select: none;
+  margin-top: 70px;
+  font-size: 16px;
+  margin-left: 40px;
+}
+#withdrawv{
+  margin-top: 100px;
+}
+#withdrawa{
+  position: absolute;
+  color: #ffd700;
+  font-family: 'Source Sans Pro', sans-serif;
+  user-select: none;
+  margin-top: 130px;
+  font-size: 16px;
+  margin-left: 40px;
+}
+#withdrawav{
+  margin-top: 160px;
+}
+.confirmheader{
+  position: absolute;
+  height: 40px;
+  width: 400px;
+  border: 0.1px solid royalblue;;
+  color: #D3443E;
+  margin-top: 130px;
+  margin-left: 900px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 23px;
+  text-align: center;
+  user-select: none;
+}
+.confirmheadert{
+  margin-top: 4px;
+}
+.ConfirmClicked{
+  position: absolute;
+  height: 350px;
+  width: 400px;
+  border: 0.1px solid royalblue;;
+  margin-top: 170px;
+  margin-left: 900px;
+  border-top: none;
+  text-underline-position: 20px;
+}
+
+#text0{
+  position: absolute;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #ffd700;
+  margin-left: 10px;
+  margin-top: 20px;
+  user-select: none;
+}
+.alert{
+  position: absolute;
+  color: #D3443E;
+  font-size: 18px;
+}
+#text1{
+  margin-top: 60px;
+  margin-left: 10px;
+  user-select: none;
+}
+#text2{
+  position: absolute;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #ffd700;
+  margin-left: 10px;
+  margin-top: 100px;
+  user-select: none;
+}
+#text3{
+  position: absolute;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 140px;
+  background-color: #ffd700;
+}
+#text4{
+  position: absolute;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #ffd700;
+  margin-left: 10px;
+  margin-top: 180px;
+  user-select: none;
+}
+#text5{
+  position: absolute;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: black;
+  margin-left: 10px;
+  margin-top: 220px;
+  background-color: #ffd700;
+
+}
+#confirmnewaccheaderc{
+  margin-top: 300px;
+ }
+#confirmnewaccheaderr{
+  margin-left:220px;
+  margin-top: -30px;
+  background-color: gray;
+}
+#confirmnewaccheaderr:hover{
+  background-color: dimgray;
+}
+#reject0{
+  margin-left: 50px;
+}
+#alertnetwork{
+  position: absolute;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  margin-top: 120px;
+  display: none;
+}
+
+#showitworks{
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+
+
+#errorPrevent{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(47,79,79, .4);
+  display: none;
+}
+#NoProvider{
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+  color: #ffd700;
+}
+#instammMetaMask{
+  color: #fff;
+  cursor: pointer;
+}
+#MetaMaskAlert{
+  position: absolute;
+  height: 40px;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-top: 20px;
+  user-select: none;
+  display: none;
+}
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  margin-top: 10px;
+  border-bottom: 10px solid #fff;
+  user-select: none;
+  display: none;
+}
+#MetaMaskAlertt{
+  color: #ffd700;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 10px;
+  margin-left: 27px;
+  position: absolute;
+}
+
+#confirmwitdraw{
+  position: absolute;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 40px;
+
+}
+
+
+.divwaiting{
+  position: absolute;
+  height: 50px;
+  width: 300px;
+  background-color: #52007f;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffd700;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 124px;
+  user-select: none;
+  display: none;
+}
+#divwaitingt{
+  position: absolute;
+  margin-left: 10px;
+}
+
+
+#transactionconfirmed{
+  position: absolute;
+  height: 50px;
+  width: 300px;
+  background-color: #52007f;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffd700;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 124px;
+  user-select: none;
+  display: none;
+}
+#transactionconfirmedt{
+  position: absolute;
+  margin-left: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#text00{
+  position: absolute;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #ffd700;
+  margin-left: 10px;
+  margin-top: 20px;
+  user-select: none;
+}
+
+#text11{
+  margin-top: 80px;
+  margin-left: 10px;
+  user-select: none;
+}
+#text22{
+  position: absolute;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #ffd700;
+  margin-left: 10px;
+  margin-top: 140px;
+  user-select: none;
+}
+#text33{
+  position: absolute;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 210px;
+  background-color: #ffd700;
+}
+#text44{
+  position: absolute;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #ffd700;
+  margin-left: 10px;
+  margin-top: 180px;
+  user-select: none;
+}
+#rejectw{
+  margin-left: 50px;
+}
+
+#confirmwithdrawheader{
+  display: none;
+}
+#confirmwithdrawal{
+  display: none;
+}
+#deposit{
+  display: none;
+}
+#withdraw{
+  display: none;
+}
+#confirmnewaccheader{
+  display: none;
+}
+#confirmnewacc{
+  display: none;
+}

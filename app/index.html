@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/etherhash.png">
+    <title>BscHash</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="web3.js" charset="utf-8"></script>
+    <script src="main.js"></script>
+
+  </head>
+  <body>
+
+      <div id="logo">  </div>
+      <p id="logot">BscHash</p>
+
+      <a href="howto.html"> <p id="howitworks">How It Works?</p></a>
+    <a href="privacy.html"> <p id="privacytips">Privacy tips!</p></a>
+
+      <div class="signals" id="signals"></div>
+
+
+      <div id="notice">
+        <div id="noticei"></div>
+        <p id="noticet">BscHash is experimental software. Please use at your own risk.</p>
+      </div>
+
+      <div class="selector" id="newaccselect" onclick="newaccf()">
+          <p id="newaccselectt">Create Account</p>
+      </div>
+
+      <div class="selector" id="depositselect" onclick="depositf()">
+          <p id="depositselectt">Deposit</p>
+      </div>
+
+
+      <div class="selector" id="withdrawselect" onclick="withdrawf()">
+          <p id="withdrawselectt">Withdraw</p>
+      </div>
+
+
+      <div class="maincontainer" id="newacc">
+        <p id="newaccpass">Enter your secure password with at least 10 characters:</p>
+        <input type="text" name="" value="" id="newaccvalue" class="inp" onkeypress="CheckSpace(event)">
+        <p id="selamot">Select amount for deposit:</p>
+        <div id="lineford"></div>
+        <div class="cirlce" id="first" onclick="deposit001()"></div>
+        <div class="cirlce" id="sec" onclick="deposit01()"></div>
+        <div class="cirlce" id="thr" onclick="deposit1()"></div>
+        <div class="cirlce" id="four" onclick="deposit10()"></div>
+        <p class="amtext" id="firstt">0.01 BNB</p>
+        <p class="amtext" id="sect">0.1 BNB</p>
+        <p class="amtext" id="thrt">1 BNB</p>
+        <p class="amtext" id="fourt">10 BNB</p>
+
+        <div class="Confirm" id="newaccc" onclick="CreateNewAccount()">
+          <p class="Confirmt">Confirm</p>
+        </div>
+      </div>
+
+
+
+
+      <div class="maincontainer" id="deposit">
+          <p id="deposittext">You can deposit only on an existing account.</p>
+          <p id="depositamountt">Enter amount:</p>
+          <input type="text" name="" value="" id="depositamount" class="inp">
+          <p id="depositto">Enter recipient hash:</p>
+          <input type="text" name="" value="" id="deposittov" class="inp">
+          <div class="Confirm" id="depositc" onclick="depositeth()">
+            <p class="Confirmt">Confirm</p>
+          </div>
+      </div>
+
+
+
+
+      <div class="maincontainer" id="withdraw">
+          <p id="withdrawt">When you withdraw funds, the account is permanently deleted. <br> Read more at <a href="privacy.html"> <span id="readmorew">Privacy tips.</span></a></p>
+          <p id="withdrawp">Enter Password:</p>
+          <input type="text" name="" value="" id="withdrawv" class="inp">
+          <p id="withdrawa">Enter Address:</p>
+          <input type="text" name="" value="" id="withdrawav" class="inp">
+          <div class="Confirm" id="withdrawc" onclick="withdrawalonclick()">
+            <p class="Confirmt">Confirm</p>
+          </div>
+      </div>
+
+
+      <div class="confirmheader" id="confirmnewaccheader">
+        <p class="confirmheadert">Confirm New Account</p>
+      </div>
+      <div class="ConfirmClicked" id="confirmnewacc">
+        <p id="text0">Save Your Password!</p>
+        <p id="text1" class="alert" id="text1">Be careful, it can not be recovered if you lose it.</p>
+        <p id="text2">Your Password:</p>
+        <p id="text3"></p>
+        <p id="text4">Your Deposit Hash:</p>
+        <p id="text5"></p>
+
+        <div class="Confirm" id="confirmnewaccheaderc" onclick="newAccountConnect()">
+          <p class="Confirmt">Connect</p>
+        </div>
+
+        <div class="Confirm" id="confirmnewaccheaderr" onclick="reject()">
+          <p class="Confirmt" id="reject0">Reject</p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="confirmheader" id="confirmwithdrawheader">
+        <p class="confirmheadert">Confirm Withdrawal</p>
+      </div>
+      <div class="ConfirmClicked" id="confirmwithdrawal">
+        <p id="text00">Using this action you will get all sum of deposited ether.</p>
+        <p id="text11" class="alert" id="text1">After withdrawal your password and deposit hash will be deleted and can't be reused!</p>
+        <p id="text22">Read more on <a href="howto.html"> <span id="showitworks">How it Works.</span></a> </p>
+        <p id="text33">0x53045DFbB84F3fAE820a72a03B79bB6ed7C30aB8</p>
+        <p id="text44">You Will Get BNB On This Address:</p>
+
+        <div class="Confirm" id="confirmnewaccheaderc" onclick="withdrawalConfirmed()">
+          <p class="Confirmt" id="confirmwitdraw">Withdraw</p>
+        </div>
+
+        <div class="Confirm" id="confirmnewaccheaderr" onclick="rejecwith()">
+          <p class="Confirmt" id="rejectw">Reject</p>
+        </div>
+      </div>
+
+
+      <p id="alertnetwork">You are on testnet. <br></p>
+
+      <div class="divwaiting" id="divwaiting">
+        <p id="divwaitingt">Waiting for a transaction to be confirmed.</p>
+      </div>
+
+      <div class="conftransalert" id="transactionconfirmed">
+        <p id="transactionconfirmedt">Transaction confirmed !</p>
+      </div>
+
+
+
+
+
+
+    <a href="https://testnet.bscscan.com/address/0x446ae861c2Df2f8b813bC956B99909Ca4904bdBa" target="_blank">  <p id="donations">Donations address: 0x446ae861c2Df2f8b813bC956B99909Ca4904bdBa</p></a>
+      <p id="version">BscHash v1.0.1</p>
+
+
+
+      <div id="errorPrevent">
+          <div id="NoProvider">
+              <p>Not possible to connect to the Web3 provider<br>  Install  <span id="instammMetaMask" onClick="window.open('https://metamask.io/');">MetaMask</span> <br> <br> After installation reload page.</p>
+          </div>
+      </div>
+      <div class="arrow" id="arrow"></div>
+      <div id="MetaMaskAlert">
+          <p id="MetaMaskAlertt">Confirm Transaction !</p>
+      </div>
+    <script src="interactive.js"></script>
+  </body>
+</html>

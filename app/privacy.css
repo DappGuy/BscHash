@@ -1,0 +1,100 @@
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #0C0C0C;
+}
+
+#logop{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-image: url("img/bschash.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  cursor: pointer;
+  transition:transform 1.3s;
+}
+#logop:hover {
+  transform: rotate(180deg);
+}
+
+#logotp{
+  position: absolute;
+  font-size: 29px;
+  font-weight: 700;
+  color: royalblue;
+  user-select: none;
+  margin-top: 40px;
+}
+.dot{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #A349A4;
+  margin-top: 150px;
+}
+#pt0{
+  position: absolute;
+  color: #94FEBF;
+  margin-top: 195px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+#dot0{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #A349A4;
+  margin-top: 198px;
+}
+#pt1{
+  position: absolute;
+  color: #94FEBF;
+  margin-top: 340px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+#dot1{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #A349A4;
+  margin-top: 344px;
+}
+#pt2{
+  position: absolute;
+  color: #94FEBF;
+  margin-top: 440px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+#dot2{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #A349A4;
+  margin-top: 442px;
+}
+#pt3{
+  position: absolute;
+  color: #94FEBF;
+  margin-top: 580px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+#dot3{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #A349A4;
+  margin-top: 582px;
+}
